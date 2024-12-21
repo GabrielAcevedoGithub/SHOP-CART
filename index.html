@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesanías Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img class="logo" src="image/logo2.png" alt="ARTESANIAS SHOP">
+        <h1>ARTESANIAS SHOP</h1>
+        <p class="animado">Tu tienda en línea de artículos artesanales</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Productos -->
+        <!-- Puedes añadir más productos aquí -->
+        <section id="productos">
+            <h2 class="productosvendedores">Productos Destacados</h2>
+            <div class="productos">
+                <!-- Tarjeta de Producto -->
+                <div class="producto">
+                    <img src="image/j.avif" alt="Vaso de Cerámica">
+                    <h3>Vaso de Cerámica</h3>
+                    <p class="precio">$15.00</p>
+                    <p class="descripcion">Hecho a mano con materiales ecológicos. Perfecto para tus bebidas
+                        favoritas.</p>
+                    <button class="btn-carrito">Agregar al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="image/m.png" alt="Bolso de Cuero">
+                    <h3>Bolso de Cuero</h3>
+                    <p class="precio">$45.00</p>
+                    <p class="descripcion">Bolso artesanal de cuero genuino. Estilo y durabilidad garantizados.
+                    </p>
+                    <button class="btn-carrito">Agregar al Carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="image/m.webp" alt="Collar Artesanal">
+                    <h3>Collar Artesanal</h3>
+                    <p class="precio">$25.00</p>
+                    <p class="descripcion">Collar hecho a mano con piedras naturales. Agrega un toque especial a
+                        tu atuendo.</p>
+                    <button class="btn-carrito">Agregar al Carrito</button>
+                </div>
+                <!-- Puedes añadir más tarjetas de producto aquí -->
+            </div>
+        </section>
+
+        </div>
+        </section>
+
+        <section id="vendedores">
+            <h2 class="productosvendedores">Nuestros Vendedores</h2>
+            <div class="vendedores">
+                <!-- Tarjeta de Vendedor -->
+                <div class="vendedor">
+                    <img src="image/v2.jfif" alt="Foto de Juan Pérez">
+                    <h3>Juan Pérez</h3>
+                    <p class="especialidad">Cerámica y Escultura</p>
+                    <p class="experiencia">10 años de experiencia</p>
+                    <p class="descripcion">Juan es un ceramista que crea piezas únicas inspiradas en la naturaleza y la
+                        cultura local.</p>
+                </div>
+                <div class="vendedor">
+                    <img src="image/v1.jpg" alt="Foto de Mario González">
+                    <h3>Mario González</h3>
+                    <p class="especialidad">Joyería Artesanal</p>
+                    <p class="experiencia">8 años de experiencia</p>
+                    <p class="descripcion">Mario diseña y fabrica joyas con piedras preciosas, destacando la
+                        autenticidad en cada pieza.</p>
+                </div>
+                <div class="vendedor">
+                    <img src="image/v3.avif" alt="Foto de Carla López">
+                    <h3>Carla López</h3>
+                    <p class="especialidad">Textiles y Tejidos</p>
+                    <p class="experiencia">12 años de experiencia</p>
+                    <p class="descripcion">Carla trabaja con técnicas de tejido tradicionales, creando productos únicos
+                        y de gran calidad.</p>
+                </div>
+                <!-- Puedes añadir más tarjetas de vendedores aquí -->
+            </div>
+        </section>
+
+        <!-- seccion del carrito -->
+
+        <section id="carrito">
+            <h2>Tu Carrito de Compras</h2>
+            <div class="carrito-items"></div>
+            <p class="total">Total: $<span id="total">0.00</span></p>
+            <button id="vaciar-carrito" class="btn-vaciar">Vaciar Carrito</button>
+            <button id="comprar-carrito" class="btn-comprar"> <a class="link-comprar" href="comprar.html">realizar compra</a></button>
+        </section>
+
+        <div id="toast-container"></div>
+
+        
+        
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2 class="contactanos">Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button class="btn-contacto" type="submit">Enviar</button>
+            </form>
+        </section>
+        <div id="demoE" class="demo">
+            <h2>Acerca de Artesania Shop</h2> <br>
+
+            Bienvenidos a Artesanía Shop, un e-commerce especializado en la venta de artículos artesanales únicos y de
+            alta calidad. Nuestro sitio es un espacio donde creadores apasionados pueden exhibir y vender sus productos
+            hechos a mano, mientras que compradores de todas partes pueden descubrir y adquirir piezas exclusivas que
+            reflejan autenticidad, cultura y creatividad. <br>
+
+            Características del Sitio
+            Catálogo de Productos Artesanales: Contamos con una amplia variedad de productos, desde joyería y cerámica
+            hasta textiles y decoración, cada uno con su propio toque artístico y elaborado con materiales de alta
+            calidad. <br>
+            Tarjetas de Producto: Cada artículo cuenta con una tarjeta de presentación que incluye una imagen clara,
+            título, precio, y una breve descripción para que los compradores conozcan sus características principales
+            antes de comprar.
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Artesanía Shop - Todos los derechos reservados.</p>
+        <p><svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true"
+                class="octicon octicon-mark-github">
+                <path
+                    d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+                </path>
+            </svg>
+        </p>
+        <a class="link" href="https://github.com/GabrielAcevedoGithub/SHOP">GitHub</a>
+    </footer>
+
+</body>
+
+</html>

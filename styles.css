@@ -1,0 +1,668 @@
+/* Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    background-color: hsl(0, 0%, 0%);
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flexbox;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+    background-color: #053d1b;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+    text-shadow: none;
+    transition: text-shadow 2s ease;
+    transition: text-decoration 2s ease; 
+}
+nav ul li :hover {
+   color: #ffffff;
+   text-shadow: 8px #ff0000;
+   text-decoration: underline;
+   
+}
+
+/* Main */
+main {
+    padding: 2rem;
+    background: linear-gradient(135deg, #67997c, #03b66b);
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.producto {
+    border: 1px solid #000000;
+    padding: 1rem;
+    flex: 1 1 200px;
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #478105;
+    color: #fff;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 2rem;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Reinicio básico de márgenes y relleno para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección de Productos */
+#productos {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contenedor de las tarjetas de productos */
+.productos {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de cada tarjeta de producto */
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    /* Ajuste para tres columnas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Imagen del producto */
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Título del producto */
+.producto h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* Precio del producto */
+.producto .precio {
+    color: #8c614d;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Descripción del producto */
+.producto .descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 1rem);
+        /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 100%;
+        /* Una columna en pantallas pequeñas */
+    }
+}
+
+/* FROM TOP LEFT TO BOTTOM RIGHT */
+@keyframes bgshift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* SET GRADIENT BACKGROUND */
+#demoE {
+    background: linear-gradient(90deg, #312f2d00 0%, #000000 50%, #00000000 100%);
+    background-size: 200% 200%;
+    animation: bgshift 10s infinite alternate;
+    padding: 2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 2rem;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ddd;
+}
+
+/* Sección de Vendedores */
+#vendedores {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Contenedor de las tarjetas de vendedores */
+.vendedores {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de cada tarjeta de vendedor */
+.vendedor {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    /* Tres columnas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Foto del vendedor */
+/* Foto del vendedor */
+.vendedor img {
+    width: 150px;
+    /* Ajusta el tamaño según tus preferencias */
+    height: 150px;
+    /* Igual que el ancho para hacerla circular */
+    border-radius: 50%;
+    /* Hace la imagen circular */
+    object-fit: cover;
+    /* Asegura que la imagen se ajuste sin distorsión */
+    margin-bottom: 1rem;
+}
+
+
+/* Nombre del vendedor */
+.vendedor h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+/* Especialidad y Experiencia */
+.vendedor .especialidad {
+    font-weight: bold;
+    color: #8c614d;
+}
+
+.vendedor .experiencia {
+    color: #555;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* Descripción del vendedor */
+.vendedor .descripcion {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .vendedor {
+        width: calc(50% - 1rem);
+        /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .vendedor {
+        width: 100%;
+        /* Una columna en pantallas pequeñas */
+    }
+}
+
+
+/* Sombra para todas las tarjetas */
+.producto,
+.vendedor {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* Ajusta el color y la opacidad según el efecto deseado */
+    transition: box-shadow 0.3s ease;
+    /* Transición suave para efectos al pasar el cursor */
+}
+
+/* Efecto de sombra al pasar el cursor */
+.producto:hover,
+.vendedor:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.contactanos {
+    text-align: center;
+}
+
+.productosvendedores {
+    margin: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+footer a {
+    text-decoration: overline;
+    color: #000000;
+}
+
+footer p {
+    color: #000000;
+}
+
+.animado {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: auto;
+    align-content: space-around;
+    border-right: 2px solid var(--cursor-color);
+    --text-color: #ffffff;
+    --characters: 34ch;
+    --characters-steps: 34;
+    --cursor-color: #ffffff00;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+
+  /* Acá está la magia 🦄 */
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typewriter 3s steps(var(--characters-steps)) 3s forwards, 
+    blink 0.9s 15;
+}
+@keyframes typewriter {
+    to {  width: 35ch; }
+  }
+  
+@keyframes blink {
+    0%   { 
+      border-right-color: transparent;     }
+    50%  { 
+      border-right-color: rgb(255, 255, 255); 
+    }
+    100% { 
+      border-right-color: transparent;     }
+  }
+  
+  /* Sección del Carrito */
+#carrito {
+    margin: 2rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.carrito-items {
+    margin-bottom: 1rem;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.carrito-item:last-child {
+    border-bottom: none;
+}
+
+.btn-vaciar {
+    background-color: #d9534f;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-vaciar:hover {
+    background-color: #c9302c;
+}
+
+/* Estilo para el total */
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.btn-comprar {
+    background-color: #07802b;
+    color: #d3d3d3;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #45e725;
+    color: #000000;
+}
+.link-comprar {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-eliminar {
+    background-color: #d9534f;
+    color: #fff;
+    width: 15%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-eliminar:hover {
+    background-color: #c9302c;
+}
+
+.contactanos {
+    text-align: center;
+    color: #000000;
+    padding: 1rem;
+
+}
+.contactanosi {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.btn-continuar {
+    background-color: #07802b;
+    color: #d3d3d3;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.btn-continuar:hover {
+    background-color: #45e725;
+    color: #000000;
+}
+.btn-contacto {
+    background-color: #07802b;
+    color: #d3d3d3;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+.btn-contacto:hover {
+    background-color: #45e725;
+    color: #000000;
+}
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    animation: fadeInOut 4s ease forwards;
+}
+.toast2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    animation: fadeInOut 4s ease forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+.abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.some-text {
+  max-width: 800px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pure {
+  color: #e75480;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+  
+  .popup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .popup__content {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .popup__text {
+    font-size: 1.4rem;
+  }
+
+  .email {
+    color: #000000;
+  }
+  .btn-cont {
+    background-color: #078017;
+    color: #d3d3d3;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+
+}
+    .btn-cont:hover {
+        background-color: #45e725;
+        color: #000000;
+    }
+    .pop {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .p {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
